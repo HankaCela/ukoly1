@@ -1,19 +1,15 @@
-//1. Zeptáme se uživatele na den, měsíc a rok
-const day = prompt("Zadejte den:");
-const month = prompt("Zadejte měsíc:");
-const year = prompt("Zadejte rok:");
+// 1. Zeptáme se uživatele na den, měsíc a rok
+const day = prompt("Zadejte den (např. 28):");
+const month = prompt("Zadejte měsíc (např. 4):");
+const year = prompt("Zadejte rok (např. 2021):");
+document.body.innerHTML += `<p class="date"><strong>Datum:</strong> <span class="day">${day}</span>. <span class="month">${month}</span>.<span class="year">${year}</span></p>`;
 
-document.body.innerHTML += `<p class="date"><span class="day">28</span>. <span class="month">4</span>.<span class="year">2021</span></p>`;
-
-
-//2. Zeptáme se uživatele na teplotu ve stupních Fahrenheita
+// 2. Zeptáme se uživatele na teplotu ve stupních Fahrenheita
 const fahrenheit = prompt("Zadejte teplotu ve stupních Fahrenheita:");
 const celsius = (5 / 9) * (fahrenheit - 32);
-
 document.body.innerHTML += `<div class="result">Teplota ${fahrenheit}°F odpovídá ${celsius.toFixed(2)}°C.</div>`;
 
-
-//3. Objekt představující let
+// 3. Objekt představující let
 const flight = {
     id: '145c01af48dd00002715248e_0',
     dTimeUTC: '01/26/2021 @ 1:25pm (UTC)',
@@ -85,18 +81,14 @@ document.body.innerHTML += `<p>Maximální hmotnost: ${bagDimensions.hand_weight
 const secondBagPrice = Math.ceil(flight.bags_price[2]); // Zaokrouhleno na celé koruny
 document.body.innerHTML += `<p><strong>Cena za druhé zavazadlo:</strong> ${secondBagPrice} Kč</p></div>`;
 
-
-//3. Získání velikostí okna
+// 4. Získání velikostí okna
 const innerWidth = window.innerWidth;
 const innerHeight = window.innerHeight;
 const outerWidth = window.outerWidth;
 const outerHeight = window.outerHeight;
 
 // Vypisování hodnot do HTML
-document.body.innerHTML += `<p>Vnitřní šířka (innerWidth): ${innerWidth} px</p>`;
-document.body.innerHTML += `<p>Vnitřní výška (innerHeight): ${innerHeight} px</p>`;
-document.body.innerHTML += `<p>Vnější šířka (outerWidth): ${outerWidth} px</p>`;
-document.body.innerHTML += `<p>Vnější výška (outerHeight): ${outerHeight} px</p>`;
-document.body.innerHTML += `<hr>`;
-document.body.innerHTML += `<p>Rozdíl mezi vnější a vnitřní šířkou: ${widthDifference} px</p>`;
-document.body.innerHTML += `<p>Rozdíl mezi vnější a vnitřní výškou: ${heightDifference} px</p>`;
+document.body.innerHTML += `<div class="flight-info"><p><strong>Vnitřní šířka (innerWidth):</strong> ${innerWidth} px</p>`;
+document.body.innerHTML += `<p><strong>Vnitřní výška (innerHeight):</strong> ${innerHeight} px</p>`;
+document.body.innerHTML += `<p><strong>Vnější šířka (outerWidth):</strong> ${outerWidth} px</p>`;
+document.body.innerHTML += `<p><strong>Vnější výška (outerHeight):</strong> ${outerHeight} px</p></div>`;
