@@ -1,7 +1,7 @@
 // 1. Zeptáme se uživatele na den, měsíc a rok
-const day = prompt("Zadejte den (např. 28):");
-const month = prompt("Zadejte měsíc (např. 4):");
-const year = prompt("Zadejte rok (např. 2021):");
+const day = prompt("Zadejte den:");
+const month = prompt("Zadejte měsíc:");
+const year = prompt("Zadejte rok:");
 document.body.innerHTML += `<p class="date"><strong>Datum:</strong> <span class="day">${day}</span>. <span class="month">${month}</span>.<span class="year">${year}</span></p>`;
 
 // 2. Zeptáme se uživatele na teplotu ve stupních Fahrenheita
