@@ -2,7 +2,10 @@
 const day = prompt("Zadejte den:");
 const month = prompt("Zadejte měsíc:");
 const year = prompt("Zadejte rok:");
-document.body.innerHTML += `<p class="date"><strong>Datum:</strong> <span class="day">${day}</span>. <span class="month">${month}</span>.<span class="year">${year}</span></p>`;
+document.body.innerHTML += `<p class="date">
+  <span class="day">28</span>. <span class="month">4</span>.
+  <span class="year">2021</span>
+</p>`;
 
 // 2. Zeptáme se uživatele na teplotu ve stupních Fahrenheita
 const fahrenheit = prompt("Zadejte teplotu ve stupních Fahrenheita:");
