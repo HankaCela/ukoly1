@@ -95,3 +95,64 @@ document.body.innerHTML += `<div class="flight-info"><p><strong>Vnitřní šíř
 document.body.innerHTML += `<p><strong>Vnitřní výška (innerHeight):</strong> ${innerHeight} px</p>`;
 document.body.innerHTML += `<p><strong>Vnější šířka (outerWidth):</strong> ${outerWidth} px</p>`;
 document.body.innerHTML += `<p><strong>Vnější výška (outerHeight):</strong> ${outerHeight} px</p></div>`;
+
+const vek = 18
+
+// < <= > >= === !== 
+if(vek >= 18) {
+  document.body.innerHTML = "<h1>Vitej na strance s nejlepsim alkoholem v CR</h1>"
+
+  const kategorie = prompt("Jakou kategorii alkoholu si prejes? (pivo, vino, tvrde)").toLowerCase()
+
+  if(kategorie === "pivo") {
+    document.body.innerHTML += "<p>Mame nejlepsi piva, treba StaroBrno </p>"
+  } else if(kategorie === "vino") {
+    document.body.innerHTML += "<p>Mame nejlepsi cervena, bila a mozna i jinak barevna vina</p>"
+  } else if(kategorie === "tvrde") {
+    document.body.innerHTML += "<p>Mame nejlepsi Becherovku, odebira od nas i Zeman</p>"
+  } else {
+    document.body.innerHTML += "<p>Error 404: alkohol not found</p>"
+  }
+} else {
+  document.body.innerHTML = "<h1>Na tuto stranku nemuzes vstoupit</h1>"
+}
+
+/*
+const vek = 18
+const pravda = true
+const nepravda = false
+
+const pizzerie = {
+  pizza1: "Hawaii",
+  pizza1Roznaska: true,
+}
+
+if(pizzerie.pizza1Roznaska) {
+  document.body.innerHTML = "<p>Ano, tuto pizzu rozvazime</p>"
+}
+
+if(pravda === true) {
+  console.log("Proslo to")
+}
+
+if(pravda) {
+  console.log("Proslo to")
+}
+
+const pizzerie = {
+    pizza1: "Hawaii",
+    pizza1Roznaska: true,
+  }
+  
+  
+  // Varianta 1
+  if(pizzerie.pizza1Roznaska) {
+    document.body.innerHTML = "<p>Ano, tuto pizzu rozvazime</p>"
+  } else {
+    document.body.innerHTML = "<p>Ne, tuto pizzu nerozvazime</p>"
+  }
+  
+  
+  // Varianta 2
+  document.body.innerHTML += pizzerie.pizza1Roznaska ? "<p>Ano, tuto pizzu rozvazime</p>" : "<p>Ne, tuto pizzu nerozvazime</p>"
+  */
